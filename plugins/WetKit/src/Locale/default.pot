@@ -1,0 +1,120 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2015-06-17 18:52+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Bake/Element/form.ctp:27
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Bake/Template/view.ctp:55
+msgid "<%= Inflector::humanize($singularVar) %>"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Bake/Element/form.ctp:27
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Bake/Template/view.ctp:55
+msgid ":"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Bake/Element/form.ctp:29;42
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Bake/Template/view.ctp:57
+msgid "Delete"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Bake/Element/form.ctp:29;44
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Bake/Template/view.ctp:57;156
+msgid "Are you sure you want to delete # {0}?"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Bake/Element/form.ctp:30
+msgid "View"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Bake/Element/form.ctp:38
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Bake/Template/index.ctp:107
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Bake/Template/view.ctp:153
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/View/Helper/ListHelper.php:235
+msgid "Actions"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Bake/Element/form.ctp:48
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Bake/Template/view.ctp:157
+msgid "List <%= $pluralHumanName %>"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Bake/Element/form.ctp:55
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Bake/Template/index.ctp:116
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Bake/Template/view.ctp:165
+msgid "List <%= $this->_pluralHumanName($alias) %>"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Bake/Element/form.ctp:56
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Bake/Template/index.ctp:117
+msgid "New <%= $this->_singularHumanName($alias) %>"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Bake/Element/form.ctp:71
+msgid "<%= Inflector::humanize($action) %> <%= $singularHumanName %>"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Bake/Element/form.ctp:107
+msgid "Submit"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Bake/Template/index.ctp:26;109
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Bake/Template/view.ctp:158
+msgid "New <%= $singularHumanName %>"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Bake/Template/view.ctp:58
+msgid "Edit"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Bake/Template/view.ctp:69
+msgid "<%= Inflector::humanize($details["
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Bake/Template/view.ctp:72;80;95;101
+msgid "<%= Inflector::humanize($field) %>"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Bake/Template/view.ctp:96
+msgid "Yes"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Bake/Template/view.ctp:96
+msgid "No"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Bake/Template/view.ctp:155
+msgid "Edit <%= $singularHumanName %>"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Bake/Template/view.ctp:156
+msgid "Delete <%= $singularHumanName %>"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Bake/Template/view.ctp:166
+msgid "New <%= Inflector::humanize(Inflector::singularize(Inflector::underscore($alias))) %>"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/wetkit-overwrites.default.ctp:35
+msgid "Web Experience Toolkit"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/wetkit-overwrites.default.ctp:35
+msgid "Collaborative open source project led by the Government of Canada"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/wetkit-overwrites.default.ctp:57
+msgid "Left Menu"
+msgstr ""
+

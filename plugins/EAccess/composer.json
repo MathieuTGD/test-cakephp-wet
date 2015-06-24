@@ -1,0 +1,23 @@
+{
+    "name": "your-name-here/EAccess",
+    "description": "EAccess plugin for CakePHP",
+    "type": "cakephp-plugin",
+    "require": {
+        "php": ">=5.4.16",
+        "cakephp/cakephp": "~3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "EAccess\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "EAccess\\Test\\": "tests",
+            "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
+        }
+    }
+}

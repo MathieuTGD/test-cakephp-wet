@@ -1,0 +1,375 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2015-06-17 18:52+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Controller/Component/WetKitComponent.php:56
+msgid "Your APP name"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Controller/Component/WetKitComponent.php:60
+msgid "Web Experience Toolkit"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Controller/Component/WetKitComponent.php:61
+msgid "Enter a small description of your app."
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Controller/Component/WetKitComponent.php:62
+msgid "Enter creator name."
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Controller/Component/WetKitComponent.php:63
+msgid "APS Portal"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Controller/Component/WetKitComponent.php:64
+msgid "https://intra-l01.ent.dfo-mpo.ca"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Controller/Component/WetKitComponent.php:65
+msgid "WetKit Home"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Controller/Component/WetKitComponent.php:132
+msgid "DEVELOPMENT"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Controller/Component/WetKitComponent.php:133
+msgid "LOCAL DEVELOPMENT"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Controller/Component/WetKitComponent.php:134
+msgid "TEST"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Controller/Component/WetKitComponent.php:135;139
+msgid "PRODUCTION"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Cell/User/who_did_it.ctp:6
+msgid "Created on {0} by {1}"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Cell/User/who_did_it.ctp:13
+msgid "Created on {0} "
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Cell/User/who_did_it.ctp:23
+msgid "Modified on {0} by {1}"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Cell/User/who_did_it.ctp:29
+msgid "Modified on {0}"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/breadcrumb.ctp:10
+msgid "You are here:"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/env_banner.ctp:4
+msgid "Alert: You are currently on a {0} environment ({1})."
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/filter_form.ctp:13
+msgid "Remove Filter"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/filter_form.ctp:20
+msgid "Filter List"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/filter_form.ctp:28
+msgid "Filter"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/header-theme-base.ctp:10
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/header-theme-gc-intranet.ctp:14
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/header-theme-gcwu-fegc.ctp:19
+msgid "Search and Menu"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/header-theme-base.ctp:10
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/header-theme-gc-intranet.ctp:14
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/header-theme-gcwu-fegc.ctp:19
+msgid "Menu"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/header-theme-gc-intranet.ctp:39
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/header-theme-gcwu-fegc.ctp:46
+msgid "Symbol of the Government of Canada"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/header-theme-gcwu-fegc.ctp:10
+msgid "Government of Canada"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/header-theme-gcwu-fegc.ctp:13
+msgid "http://www.canada.ca/en/index.html"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/header-theme-gcwu-fegc.ctp:14
+msgid "http://www.canada.ca/en/services/index.html"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/header-theme-gcwu-fegc.ctp:14
+msgid "Services"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/header-theme-gcwu-fegc.ctp:15
+msgid "http://www.canada.ca/en/gov/dept/index.html"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/header-theme-gcwu-fegc.ctp:15
+msgid "Departments"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/item_list.ctp:63
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/View/Helper/ListHelper.php:274
+msgid "Yes"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/item_list.ctp:64
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/View/Helper/ListHelper.php:275
+msgid "No"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/item_list.ctp:77
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/View/Helper/ListHelper.php:679
+msgid "Related {0}"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/item_list.ctp:98
+msgid "Name"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/item_list.ctp:101
+msgid "Description"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/item_list.ctp:162
+msgid "Actions"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/item_list.ctp:183
+msgid "Deleted"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/item_list.ctp:191
+msgid "Obsolete"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/item_list.ctp:289
+msgid "Are you sure you want to perform this action?"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/item_list.ctp:325
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/View/Helper/ListHelper.php:379
+msgid "Delete"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/item_list.ctp:328
+msgid "Are you sure you want to delete {0} # {1}?"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/item_list.ctp:330
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/View/Helper/ListHelper.php:388
+msgid "View"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/item_list.ctp:334
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/View/Helper/ListHelper.php:394
+msgid "Edit"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/item_list.ctp:347
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/View/Helper/ListHelper.php:554
+msgid "Showing {{start}} to {{end}} of {{count}} entries"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/item_list.ctp:351
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/View/Helper/ListHelper.php:559
+msgid "previous"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/item_list.ctp:353
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/View/Helper/ListHelper.php:561
+msgid "next"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/item_list.ctp:360
+msgid "There are no {0}"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/item_list.ctp:362
+msgid "There are no related {0}"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/item_list.ctp:370;374
+msgid "New {0}"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/wetkit-missing-overwrites.ctp:30
+msgid "Application Platform Services"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/wetkit-missing-overwrites.ctp:38
+msgid "APSKIT Template"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/wetkit-missing-overwrites.ctp:48
+msgid "Left Menu"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/wetkit-missing-overwrites.ctp:51
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/wetkit-overwrites.default.ctp:61
+msgid "Left Side Menu"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/wetkit-missing-overwrites.ctp:53
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/wetkit-overwrites.default.ctp:68
+msgid "WetKit Info"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/wetkit-missing-overwrites.ctp:126
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/wetkit-overwrites.default.ctp:222
+msgid "Site menu"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/wetkit-missing-overwrites.ctp:131;133
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/wetkit-overwrites.default.ctp:226;228
+msgid "Users"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/wetkit-missing-overwrites.ctp:135
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/wetkit-overwrites.default.ctp:230
+msgid "User Groups"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/wetkit-overwrites.default.ctp:64
+msgid "Home"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/wetkit-overwrites.default.ctp:137
+msgid "Language selection"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/wetkit-overwrites.default.ctp:161;168;175;183;190;202
+msgid "Search"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/wetkit-overwrites.default.ctp:164;180;193
+msgid "Search website"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/wetkit-overwrites.default.ctp:270
+msgid "About this site"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/wetkit-overwrites.default.ctp:274;308
+msgid "Terms and conditions"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/wetkit-overwrites.default.ctp:275;309
+msgid "Transparency"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/wetkit-overwrites.default.ctp:280
+msgid "Contact us"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/wetkit-overwrites.default.ctp:282
+msgid "Questions or comments?"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/wetkit-overwrites.default.ctp:286
+msgid "About"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/wetkit-overwrites.default.ctp:288
+msgid "About the Web Experience Toolkit"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/wetkit-overwrites.default.ctp:289
+msgid "About the Web Standards"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/wetkit-overwrites.default.ctp:293
+msgid "News"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/wetkit-overwrites.default.ctp:295
+msgid "Recent project activity"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/wetkit-overwrites.default.ctp:296
+msgid "Project statistics"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/wetkit-overwrites.default.ctp:300
+msgid "Stay connected"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Element/wetkit-overwrites.default.ctp:302
+msgid "Twitter"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Layout/default.ctp:26
+msgid "Skip to main content"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Layout/default.ctp:28
+msgid "Skip to \"About this site\""
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Layout/default.ctp:33
+msgid "Skip to section menu"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Pages/wetkit_info.ctp:13
+msgid "Wet Helper"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Pages/wetkit_info.ctp:14
+msgid "List Helper"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Pages/wetkit_info.ctp:15
+msgid "WetKit Component"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/Template/Pages/wetkit_info.ctp:16
+msgid "EAccess Plugin"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/View/Helper/ListHelper.php:383
+msgid "Are you sure you want to delete this record?"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/View/Helper/ListHelper.php:685
+msgid "There are no related {0}."
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/View/Helper/ListHelper.php:694
+msgid "Add {0}"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/View/Helper/WetHelper.php:53
+msgid "Date modified:"
+msgstr ""
+
+#: C:/xampp/htdocs/storm/wetkit/plugins/WetKit/src/View/Helper/WetHelper.php:60
+msgid "Undefined"
+msgstr ""
+

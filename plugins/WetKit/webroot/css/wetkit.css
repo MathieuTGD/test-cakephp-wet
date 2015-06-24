@@ -1,0 +1,21 @@
+.wetkit-form input.form-control,
+.wetkit-form select.form-control,
+.wetkit-form textarea.form-control
+{
+    width: 100%;
+}
+
+
+.required > label {
+    font-weight: bold;
+}
+
+.required > label.label-en:after {
+    content: '(required)';
+    color: #C3232D;
+}
+
+.required > label.label-fr:after {
+    content: '(obligatoire)';
+    color: #C3232D;
+}
