@@ -13,6 +13,13 @@ echo $markdown->text(
 # WETKIT Change Log
 
 
+## 2015-06-25
+
+- Added Splash page
+- Minor modification to Language handling
+- Redesign of WET UI elements and view blocks
+- New app configurations for WET UI displays
+
 ## 2015-06-23
 
 - Standardize wetkit configurations

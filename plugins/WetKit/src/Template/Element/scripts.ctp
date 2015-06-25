@@ -4,5 +4,3 @@
 <!--<![endif]--><!--[if lt IE 9]>
 <script src="<?= Configure::read('wetkit.wet.path') ?>/js/ie8-wet-boew2.min.js"></script>
 <![endif]--> 
-
-<!-- WEBSTATS_TRACKING_CODE -->

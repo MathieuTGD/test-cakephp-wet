@@ -2,7 +2,7 @@
 use Cake\Utility\Inflector;
 use Cake\Core\Configure;
 
-if (Configure::read('wetkit.show-breadcrumb') === true) {
+if (Configure::read('wetkit.ui.breadcrumb') === true) {
     $custom_breadcrumb = $this->fetch("wetkit-breadcrumb");
     if (trim($custom_breadcrumb) === "") {
         ?>

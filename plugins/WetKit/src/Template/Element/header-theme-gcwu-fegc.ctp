@@ -13,19 +13,19 @@
                         <li><a href="<?php echo __d('wet_kit', 'http://www.canada.ca/en/index.html') ?>" rel="external">Canada.ca</a></li>
                         <li><a href="<?php echo __d('wet_kit', 'http://www.canada.ca/en/services/index.html')?>" rel="external"><?php echo __d('wet_kit', 'Services')?></a></li>
                         <li><a href="<?php echo __d('wet_kit', 'http://www.canada.ca/en/gov/dept/index.html')?>" rel="external"><?php echo __d('wet_kit', 'Departments')?></a></li>
-                        <?php echo $this->fetch("wetkit-wb-lng"); ?>
+                        <?= $this->element("wk-language-bar"); ?>
                     </ul>
                     <section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
-                        <?php if ($this->fetch("wetkit-search")) $menu_title = __d('wet_kit', 'Search and Menu'); else $menu_title = __d('wet_kit', 'Menu'); ?>
+                        <?php if (Configure::read("wetkit.ui.search") === true) $menu_title = __d('wet_kit', 'Search and Menu'); else $menu_title = __d('wet_kit', 'Menu'); ?>
                         <h2><?php echo $menu_title ?></h2>
                         <ul class="pnl-btn list-inline text-right">
                             <li>
                                 <a href="#mb-pnl" title="<?php echo $menu_title ?>" aria-controls="mb-pnl" class="overlay-lnk btn btn-sm btn-default" role="button">
-                                    <?php if ($this->fetch("wetkit-search")) { ?><span class="glyphicon glyphicon-search"><?php } ?>
+                                    <?php if (Configure::read("wetkit.ui.search") === true) { ?><span class="glyphicon glyphicon-search"><?php } ?>
                                         <span class="glyphicon glyphicon-th-list">
                                             <span class="wb-inv"><?php echo $menu_title ?></span>
                                         </span>
-                                    <?php if ($this->fetch("wetkit-search")) { ?></span><?php } ?>
+                                    <?php if (Configure::read("wetkit.ui.search") === true) { ?></span><?php } ?>
                                 </a>
                            </li>
                         </ul>
@@ -46,10 +46,10 @@
                     aria-label="<?php echo __d('wet_kit', 'Symbol of the Government of Canada') ?>">
                 </object>
                 
-            <?php echo $this->fetch("wetkit-search"); ?>
+            <?php echo $this->element("wk-search"); ?>
             </div>
         </div>
     </div>
-    <?php echo $this->fetch("wetkit-megamenu"); ?>
-    <?php echo $this->element('breadcrumb'); ?>
+    <?php echo $this->element("wk-megamenu"); ?>
+    <?php echo $this->element('wk-breadcrumb'); ?>
 </header>

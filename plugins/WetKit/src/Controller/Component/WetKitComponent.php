@@ -49,7 +49,7 @@ class WetKitComponent extends Component
             $autopath = str_replace('[basepath]', Configure::read("wetkit.wet.basepath"), $autopath);
             $autopath = str_replace('[version]', Configure::read("wetkit.wet.version"), $autopath);
             $autopath = str_replace('[theme]', Configure::read("wetkit.wet.theme"), $autopath);
-            Configure::write("wetkit.wet.path", rtrim($autopath,'/'));
+            Configure::write("wetkit.wet.path", rtrim($autopath, '/'));
         }
         return Configure::read("wetkit");
     }
@@ -57,15 +57,26 @@ class WetKitComponent extends Component
     public function isAdmin()
     {
         $is_admin = false;
-        foreach ($this->admin_groups as $key => $group_id)
-        if (in_array($group_id, AuthComponent::user())) {
-            $is_admin = true;
+        foreach ($this->admin_groups as $key => $group_id) {
+            if (in_array($group_id, AuthComponent::user())) {
+                $is_admin = true;
+            }
         }
         return $is_admin;
     }
 
 
-    public function setAppData($appData) {
+    public function setAppData($appData)
+    {
+        if (isset($appData['wet'])) {
+            $appData['wet'] += Configure::read('wetkit.wet');
+        }
+        if (isset($appData['ui'])) {
+            $appData['ui'] += Configure::read('wetkit.ui');
+        }
+        if (isset($appData['env'])) {
+            $appData['env'] += Configure::read('wetkit.env');
+        }
         $appData += Configure::read('wetkit');
         $appData += [
             "lang" => Configure::read("wetkit.lang"),
@@ -73,7 +84,7 @@ class WetKitComponent extends Component
             "modified" => null,
             "release-date" => null,
             "last-release-date" => null,
-            "title" => __d('wet_kit','Web Experience Toolkit'),
+            "title" => __d('wet_kit', 'Web Experience Toolkit'),
             'description' => __d('wet_kit', 'Enter a small description of your app.'),
             'creator' => __d('wet_kit', 'Enter creator name.'),
             'parent-name' => __d('wet_kit', 'APS Portal'),
@@ -88,7 +99,7 @@ class WetKitComponent extends Component
 
         // If no modification date as been set for the current page uses the
         // date of the application release date
-        if ( $appData['modified'] == null && $appData['last-release-date'] != null) {
+        if ($appData['modified'] == null && $appData['last-release-date'] != null) {
             $appData['modified'] = $appData['last-release-date'];
         }
 
@@ -100,7 +111,7 @@ class WetKitComponent extends Component
     }
 
 
-    public function getAppData ()
+    public function getAppData()
     {
         return Configure::read('app');
     }
@@ -118,17 +129,17 @@ class WetKitComponent extends Component
         if ($lang == "en") {
             Configure::write("wetkit.lang-switch", "fr");
             Configure::write("wetkit.ISO639-2", "eng");
-            setlocale(LC_TIME, 'en_CA');
-            I18n::locale('en_CA');
-        } else {
+            setlocale(LC_TIME, 'en'.Configure::read('wetkit.locale-suffix'));
+            I18n::locale('en'.Configure::read('wetkit.locale-suffix'));
+        } else if ($lang == "fr") {
             Configure::write("wetkit.lang-switch", "en");
             Configure::write("wetkit.ISO639-2", "fra");
-            setlocale(LC_TIME, 'fr_CA');
-            I18n::locale('fr_CA');
+            setlocale(LC_TIME, 'fr'.Configure::read('wetkit.locale-suffix'));
+            I18n::locale('fr'.Configure::read('wetkit.locale-suffix'));
         }
     }
 
-    public function setModified ($date)
+    public function setModified($date)
     {
         if (!is_object($date) && $date !== null) {
             $date = new Time($date);
@@ -182,7 +193,8 @@ class WetKitComponent extends Component
     }
 
 
-    public function flashError($msg, Entity $entity) {
+    public function flashError($msg, Entity $entity)
+    {
         //debug($entity);
         $out = $msg;
         $out .= "<hr><ul>";
@@ -190,7 +202,8 @@ class WetKitComponent extends Component
         foreach ($entity->errors() as $field => $errors) {
             foreach ($errors as $type => $error) {
                 $i++;
-                $out .= '<li><a href="#'.mb_strtolower(Inflector::slug($field, '-')).'">'.__d('wet_kit', 'Error {0}: ', $i).' '.Inflector::humanize($field).' - '.$error.'</a></li>';
+                $out .= '<li><a href="#' . mb_strtolower(Inflector::slug($field, '-')) . '">' . __d('wet_kit',
+                        'Error {0}: ', $i) . ' ' . Inflector::humanize($field) . ' - ' . $error . '</a></li>';
             }
         }
         $out .= "</ul>";

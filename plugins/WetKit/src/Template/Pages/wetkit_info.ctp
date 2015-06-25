@@ -10,6 +10,8 @@ endif;
 <h1>Wetkit Information</h1>
 
 <ul>
+    <li><?= $this->Html->link(__d('wet_kit', "Wet UI Customisation"), ["controller"=>"pages", "action"=>"wetkit_ui"]) ?></li>
+    <li><?= $this->Html->link(__d('wet_kit', "Wet Splash Page"), ["controller"=>"pages", "action"=>"wetkit_splash"]) ?></li>
     <li><?= $this->Html->link(__d('wet_kit', "Wet Helper"), ["controller"=>"pages", "action"=>"wet_helper"]) ?></li>
     <li><?= $this->Html->link(__d('wet_kit', "List Helper"), ["controller"=>"pages", "action"=>"list_helper"]) ?></li>
     <li><?= $this->Html->link(__d('wet_kit', "WetKit Component"), ["controller"=>"pages", "action"=>"wetkit_component"]) ?></li>

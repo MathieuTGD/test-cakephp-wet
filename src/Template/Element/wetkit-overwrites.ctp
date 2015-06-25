@@ -54,7 +54,6 @@ if ($this->fetch('wetkit-subsite') == null) {
  ***********************************************/
 if ($this->fetch('wetkit-leftmenu') == null) {
     $this->start('wetkit-leftmenu'); ?>
-<h2><?php echo __d('wet_kit', 'Left Menu') ?></h2>
 
 <ul class="list-group menu list-unstyled">
 	<li><h3>
@@ -90,123 +89,24 @@ if ($this->fetch('wetkit-leftmenu') == null) {
  * WET LANGUAGE BAR
  * Leave blank to remove
  ***********************************************/
-if ($this->fetch('wetkit-wb-lng') == null) {
-    $this->start('wetkit-wb-lng'); ?>
-    
-    <?php if (Configure::read('wetkit.wet.theme') == 'theme-base') {?>
-        <section id="wb-lng" class="visible-md visible-lg">
-        	<h2 class="wb-inv"><? echo __d('wet_kit', 'Language selection') ?></h2>
-        	<ul class="text-right">
-                <?php if (\Cake\Core\Configure::read("wetkit.lang") == "en") {?>
-                    <li><?php echo $this->Html->link('Français', '/wet_kit/tools/lang/fr', ['lang'=>'fr', 'hreflang'=>'fr']) ?></li>
-        		<li class="curr">English&#32;<span>(current)</span></li>
-                <?php }?>
-                <?php if (\Cake\Core\Configure::read("wetkit.lang") == "fr") {?>
-                    <li class="curr">Français <span>(actuel)</span></li>
-        		<li><?php echo $this->Html->link('English', '/wet_kit/tools/lang/en', ['lang'=>'en', 'hreflang'=>'en']) ?></li>
-                <?php }?>
-                </ul>
-        </section>
-    <?php } ?>
-    
-    <?php if (Configure::read('wetkit.wet.theme') == 'theme-gc-intranet') { ?>
-        <section id="wb-lng">
-        	<h2><? echo __d('wet_kit', 'Language selection') ?></h2>
-			<ul class="list-inline margin-bottom-none">
-                <?php
-                    // User
-                    if ($user !== false) {
-                        echo '<li><a href="#"><span class="glyphicon glyphicon-user"></span> '.$user['first_name'].'</a></li>'.PHP_EOL;
-                        echo '<li class="text-muted">|</li>';
-                    }
-                    ?>
-                <?php
-                // Language Switch
-                if (\Cake\Core\Configure::read("wetkit.lang") == "fr") {
-                    echo '<li>'.$this->Html->link("English", "/wet_kit/tools/lang/en", ["lang"=>"en"]).'</li>';
-                } else {
-                    echo '<li>'.$this->Html->link("Français", "/wet_kit/tools/lang/fr", ["lang"=>"fr"]).'</li>';
-                }
-                ?>
-            </ul>
-        </section>
-    <?php } ?>
-    
-    <?php if (Configure::read('wetkit.wet.theme') == 'theme-gcwu-fegc') { ?>
-        <li id="wb-lng">
-        	<h2><?php echo __d('wet_kit', 'Language selection')?></h2>
-        	<ul class="list-inline">
-                        <?php if (\Cake\Core\Configure::read("wetkit.lang") == "fr") {
-                            echo '<li>'.$this->Html->link("English", "/wet_kit/tools/lang/en", ["lang"=>"en"]).'</li>';
-                        } else {
-                            echo '<li>'.$this->Html->link("Français", "/wet_kit/tools/lang/fr", ["lang"=>"fr"]).'</li>';
-                        }?>
-                    </ul>
-        </li>
-    <?php } ?>
-    
+if ($this->fetch('wetkit-language-bar') == null) {
+    $this->start('wetkit-language-bar'); ?>
+
     <?php
     $this->end(); // wetkit-wb-lng
 }
 
 /***********************************************
  * SITE SEARCH WIDGET
- * Set to null if you do not want to show a search bar on your site
+ * Keep empty to use the WetKit search box
  ***********************************************/
-if ($this->fetch('wetkit-search') == null) {
-    $this->start('wetkit-search'); ?>
+//if ($this->fetch('wetkit-search') == null) {
+//    $this->start('wetkit-search');
+    ?>
 
-    <?php if (Configure::read('wetkit.wet.theme') == 'theme-base') { ?>
-        <section id="wb-srch" class="col-md-4 visible-md visible-lg">
-            <h2><?php echo __d('wet_kit', 'Search')?></h2>
-            <form action="https://google.ca/search" method="get" role="search" class="form-inline">
-                <div class="form-group">
-                    <label for="wb-srch-q"><?php echo __d('wet_kit', 'Search website')?></label>
-                    <input id="wb-srch-q" class="form-control" name="q" type="search" value="" size="27" maxlength="150">
-                    <input type="hidden" name="q" value="site:wet-boew.github.io OR site:github.com/wet-boew/">
-                </div>
-                <button type="submit" id="wb-srch-sub" class="btn btn-default"><?php echo __d('wet_kit', 'Search')?></button>
-            </form>
-        </section>
-    <?php } ?>
-    
-    <?php if (Configure::read('wetkit.wet.theme') == 'theme-gc-intranet') { ?>
-        <section id="wb-srch" class="visible-md visible-lg">
-            <h2><?php echo __d('wet_kit', 'Search') ?></h2>
-        
-            <form action="http://search-recherche.ent.dfo-mpo.ca/index-eng.php" method="post" role="search"
-                  class="form-inline">
-                <div class="form-group">
-                    <label for="wb-srch-q"><?php echo __d('wet_kit', 'Search website') ?></label>
-                    <input id="wb-srch-q" class="form-control" name="texthighlight" type="search" value="" size="27" maxlength="150"/>
-                </div>
-                <button type="submit" id="wb-srch-sub" class="btn btn-default"><?php echo __d('wet_kit', 'Search') ?></button>
-            </form>
-        </section>
-    <?php } ?>
-    
-    <?php if (Configure::read('wetkit.wet.theme') == 'theme-gcwu-fegc') { ?>
-        <section id="wb-srch" class="visible-md visible-lg">
-            <h2><?php echo __d('wet_kit', 'Search') ?></h2>
-            <form action="http://recherche-search.gc.ca/rGs/s_r" method="get" role="search" class="form-inline">
-                <div class="form-group">
-                    <label for="wb-srch-q"><?php echo __d('wet_kit', 'Search website') ?></label>
-                    <input id="wb-srch-q" class="form-control" name="q" type="search" value="" size="27" maxlength="150">
-                    <input type="hidden" name="st" value="s" />
-                    <input type="hidden" name="s5bm3ts21rch" value="x" />
-                    <input type="hidden" name="num" value="10" />
-                    <input type="hidden" name="st1rt" value="0" />
-                    <input type="hidden" name="langs" value="<?php echo $lang?>" />
-                    <input type="hidden" name="cdn" value="dfo" />
-                </div>
-                <button type="submit" id="wb-srch-sub" class="btn btn-default"><?php echo __d('wet_kit', 'Search') ?></button>
-            </form>
-        </section>
-    <?php } ?>
-
-<?php
-    $this->end(); // wetkit-footer
-}
+    <?php
+//    $this->end(); // wetkit-search
+//}
 
 
 
@@ -217,15 +117,10 @@ if ($this->fetch('wetkit-search') == null) {
  ***********************************************/
 if ($this->fetch('wetkit-sitemenu') == null) {
     $this->start('wetkit-sitemenu'); ?>
-    <div class="container nvbar">
-        <h2>Site menu</h2>
-        <div class="row" style="background-color: #618000;">
             <ul class="list-inline menu small">
                 <li><?= $this->Html->link("Site Option 1", ['controller'=>'pages', 'action'=>'home']) ?></li>
                 <li><?= $this->Html->link("Site Option 2", ['controller'=>'pages', 'action'=>'home']) ?></li>
             </ul>
-        </div>
-    </div>
     <?php
     $this->end(); // wetkit-sitemenu
 }
@@ -238,12 +133,7 @@ if ($this->fetch('wetkit-sitemenu') == null) {
  ***********************************************/
 if ($this->fetch('wetkit-megamenu') == null) {
     $this->start('wetkit-megamenu'); ?>
-<nav role="navigation" id="wb-sm" data-trgt="mb-pnl"
-	class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
-	<div class="container nvbar">
-		<h2><?php echo __d('wet_kit', 'Site menu') ?></h2>
 
-		<div class="row">
 			<ul class="list-inline menu">
 				<li><a href="#" class="item"><?php echo __d('wet_kit', 'Users') ?></a>
 					<ul class="sm list-unstyled" id="users" role="menu">
@@ -253,11 +143,8 @@ if ($this->fetch('wetkit-megamenu') == null) {
                                     array('controller' => 'groups', 'action' => 'index')) ?></li>
 					</ul></li>
 			</ul>
-		</div>
-	</div>
-    <?= $this->fetch('wetkit-sitemenu') ?>
-</nav>
-<?php
+
+    <?php
     $this->end(); // wetkit-megamenu
 }
 
@@ -271,16 +158,12 @@ if ($this->fetch('wetkit-megamenu') == null) {
  * Custom Breadcrumb to add to the WetKit
  * Leave blank to use the default breadcrumb
  ***********************************************/
-if ($this->fetch('wetkit-breadcrumb') == null) {
-    $this->start('wetkit-breadcrumb');
-
-    //Enter your custom breadcrumb code here
-    
+//if ($this->fetch('wetkit-breadcrumb') == null) {
+//    $this->start('wetkit-breadcrumb');
     ?>
-
     <?php
-    $this->end(); // wetkit-breadcrumb
-}
+//    $this->end(); // wetkit-breadcrumb/
+//}
 
 /***********************************************
  * SITE FOOTER

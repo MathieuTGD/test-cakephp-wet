@@ -3,11 +3,9 @@
     
     if ($this->elementExists('wetkit-overwrites')) {
         $this->element('wetkit-overwrites');
-    } else {
-        $this->element('wetkit-missing-overwrites');
     }
     
-    echo $this->element('head');
+    echo $this->element('wk-head');
 ?>
 
 <?php if (key(Configure::read("wetkit.currentEnv")) != "PROD" && Configure::read('debug') && Configure::read('wetkit.env.envBar')) {?>
@@ -16,7 +14,7 @@
 	<?php } else { ?>
 	   <body vocab="http://schema.org/" typeof="WebPage" style="padding-top: 30px">
 	<?php } ?>
-	<?php echo $this->element('env_banner');?>
+	<?php echo $this->element('wk-env-banner');?>
 <?php } else {?>
 	<body vocab="http://schema.org/" typeof="WebPage">
 <?php } ?>
@@ -32,16 +30,14 @@
             <a class="wb-sl" href="#wb-sec"><?php echo __d('wet_kit', 'Skip to section menu') ?></a>
         </li>
     <?php } ?>
-    
 </ul>
 
 <?php echo $this->element('header-'.Configure::read('wetkit.wet.theme')); ?>
 
-<?php if ($this->fetch("wetkit-leftmenu")) { ?>
+<?php if ($this->element("wk-leftmenu")) { ?>
 <div class="container">
     <div class="row">
         <main class="col-md-9 col-md-push-3" property="mainContentOfPage" role="main">
-
 <?php } else { ?>
     <main role="main" property="mainContentOfPage" class="container">
 <?php } ?>
@@ -60,11 +56,7 @@
     </main>
 <?php } ?>
 
-<?php
-    echo $this->fetch("wetkit-footer");
-    echo $this->element('scripts');
-    echo $this->element('wetkit-debug');
-?>
+<?= $this->element('wk-footer') ?>
 
 </body>
 </html>

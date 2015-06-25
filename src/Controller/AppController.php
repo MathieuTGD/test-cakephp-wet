@@ -53,6 +53,9 @@ class AppController extends Controller
         // Setup Language using WetKit
         $this->loadComponent("WetKit.WetKit");
         $this->appData = $this->WetKit->init([
+            'ui' => [
+                'leftmenu' => true,
+            ]
             /*
             // Default data:
             "lang" => Configure::read("wetkit.lang"),

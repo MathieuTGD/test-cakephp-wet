@@ -1,11 +1,19 @@
-<?php use Cake\Core\Configure; ?>
+<?php use Cake\Core\Configure;
+
+if ($this->elementExists('head')) {
+    echo $this->element('head');
+} else {
+?>
+
+
+
 <!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="<?= Configure::read("wetkit.lang") ?>" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
 <html class="no-js" lang="<?= Configure::read("wetkit.lang") ?>" dir="ltr">
 <!--<![endif]-->
 <head>
     <?php //echo $this->Html->charset(); ?>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title><?php echo $this->fetch('title'); ?></title>
+    <title><?php echo Configure::read('wetkit.title'); ?></title>
 
     <link href="<?= Configure::read('wetkit.wet.path') ?>/assets/favicon.ico" rel="shortcut icon"/>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
@@ -19,6 +27,7 @@
           content="Date modified (<?= Configure::read("wetkit.modified") ?>) / Date de modification (<?= Configure::read("wetkit.modified") ?>)"/>
     <meta name="dcterms.subject" title="scheme" content="<?= Configure::read("wetkit.meta-subject") ?>"/>
     <meta name="dcterms.language" title="ISO639-2" content="<?= Configure::read("wetkit.ISO639-2") ?>"/>
+    <?= $this->fetch('wetkit-head-meta') ?>
 
     <!--[if gte IE 9 | !IE ]><!-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/<?= Configure::read('wetkit.jquery-version') ?>/jquery.min.js"></script>
@@ -53,4 +62,8 @@
     <?= $this->Html->css("wetkit"); ?>
     <?= $this->fetch('css'); ?>
     <?= $this->fetch('script'); ?>
+    <?= $this->fetch('wetkit-head'); ?>
 </head>
+
+<?php
+}

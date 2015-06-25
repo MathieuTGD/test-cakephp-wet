@@ -14,15 +14,7 @@ define("WETKIT_ROOT", ROOT . DS . "plugins" . DS . "WetKit");
 Configure::write("wetkit.lang", "en");
 Configure::write("wetkit.lang-switch", "fr");
 Configure::write("wetkit.ISO639-2", "eng");
-
-// Contains the app information, is set by the WetKitComponent
-Configure::write("app", []);
-
-/*
- * WETKIT CONFIGURATIONS
- * You can overwrite these in your app's config/bootstrap.php file
- * Copy and paste all or only the ones to modify into your app bootstrap file.
- */
+Configure::write("wetkit.locale_suffix", '_CA'); // i.e. _US _CA
 
 
 /*
@@ -36,7 +28,7 @@ Configure::write("app", []);
  *              [basepath], [version], [theme] ** Square brackets are required.
  *
  */
-Configure::write("wetkit.wet.theme", 'theme-base');
+Configure::write("wetkit.wet.theme", 'theme-gc-intranet');
 Configure::write("wetkit.wet.basepath", '/share/wet');
 Configure::write("wetkit.wet.path", null);
 Configure::write("wetkit.wet.version", "4.0.14");
@@ -48,8 +40,7 @@ Configure::write("wetkit.tinymce-version", "4.0.16");
 Configure::write("wetkit.jquery-ie-version", "1.11.1");
 Configure::write("wetkit.jquery-version", "2.1.1");
 
-// Configure WET features
-Configure::write("wetkit.show-breadcrumb", true);
+
 
 
 // Encrypted Fields
@@ -76,4 +67,16 @@ Configure::write("wetkit.env.dev", ['-dev']);
 Configure::write("wetkit.env.test", ['-test']);
 Configure::write("wetkit.env.prod", []);
 
+
+/*
+ * WetKit UI configuration
+ *
+ */
+Configure::write("wetkit.ui.leftmenu", true);
+Configure::write("wetkit.ui.sitemenu", false);
+Configure::write("wetkit.ui.megamenu", true);
+Configure::write("wetkit.ui.breadcrumb", true);
+Configure::write("wetkit.ui.search", true);
+Configure::write("wetkit.ui.subsite", true);
+Configure::write("wetkit.ui.language-bar", true);
 
